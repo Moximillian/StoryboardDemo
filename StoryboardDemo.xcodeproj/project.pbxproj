@@ -21,6 +21,7 @@
 		91EF5C5D15D44A62000174A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EF5C3B15D44A62000174A0 /* Foundation.framework */; };
 		91EF5C6515D44A62000174A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91EF5C6315D44A62000174A0 /* InfoPlist.strings */; };
 		91EF5C6815D44A62000174A0 /* StoryboardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EF5C6715D44A62000174A0 /* StoryboardDemoTests.m */; };
+		91EF5C7215D44BDD000174A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EF5C7115D44BDD000174A0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		91EF5C6415D44A62000174A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91EF5C6615D44A62000174A0 /* StoryboardDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardDemoTests.h; sourceTree = "<group>"; };
 		91EF5C6715D44A62000174A0 /* StoryboardDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardDemoTests.m; sourceTree = "<group>"; };
+		91EF5C7115D44BDD000174A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EF5C7215D44BDD000174A0 /* MapKit.framework in Frameworks */,
 				91EF5C3A15D44A62000174A0 /* UIKit.framework in Frameworks */,
 				91EF5C3C15D44A62000174A0 /* Foundation.framework in Frameworks */,
 				91EF5C3E15D44A62000174A0 /* CoreGraphics.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		91EF5C3815D44A62000174A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91EF5C7115D44BDD000174A0 /* MapKit.framework */,
 				91EF5C3915D44A62000174A0 /* UIKit.framework */,
 				91EF5C3B15D44A62000174A0 /* Foundation.framework */,
 				91EF5C3D15D44A62000174A0 /* CoreGraphics.framework */,
