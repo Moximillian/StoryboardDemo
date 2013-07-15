@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9179D06F17942E36008E360D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9179D06F17942E36008E360D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		91EF5C3515D44A62000174A0 /* StoryboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EF5C3915D44A62000174A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91EF5C3B15D44A62000174A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,7 +89,6 @@
 		91EF5C2A15D44A62000174A0 = {
 			isa = PBXGroup;
 			children = (
-				9179D06F17942E36008E360D /* Default-568h@2x.png */,
 				91EF5C3F15D44A62000174A0 /* StoryboardDemo */,
 				91EF5C6015D44A62000174A0 /* StoryboardDemoTests */,
 				91EF5C3815D44A62000174A0 /* Frameworks */,
@@ -140,6 +139,7 @@
 				91EF5C4215D44A62000174A0 /* InfoPlist.strings */,
 				91EF5C4515D44A62000174A0 /* main.m */,
 				91EF5C4715D44A62000174A0 /* StoryboardDemo-Prefix.pch */,
+				9179D06F17942E36008E360D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
