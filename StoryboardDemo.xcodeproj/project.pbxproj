@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9179D07017942E36008E360D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9179D06F17942E36008E360D /* Default-568h@2x.png */; };
 		91EF5C3A15D44A62000174A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EF5C3915D44A62000174A0 /* UIKit.framework */; };
 		91EF5C3C15D44A62000174A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EF5C3B15D44A62000174A0 /* Foundation.framework */; };
 		91EF5C3E15D44A62000174A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EF5C3D15D44A62000174A0 /* CoreGraphics.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9179D06F17942E36008E360D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		91EF5C3515D44A62000174A0 /* StoryboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EF5C3915D44A62000174A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91EF5C3B15D44A62000174A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +89,7 @@
 		91EF5C2A15D44A62000174A0 = {
 			isa = PBXGroup;
 			children = (
+				9179D06F17942E36008E360D /* Default-568h@2x.png */,
 				91EF5C3F15D44A62000174A0 /* StoryboardDemo */,
 				91EF5C6015D44A62000174A0 /* StoryboardDemoTests */,
 				91EF5C3815D44A62000174A0 /* Frameworks */,
@@ -205,7 +208,7 @@
 		91EF5C2C15D44A62000174A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Mox Soini";
 			};
 			buildConfigurationList = 91EF5C2F15D44A62000174A0 /* Build configuration list for PBXProject "StoryboardDemo" */;
@@ -233,6 +236,7 @@
 			files = (
 				91EF5C4415D44A62000174A0 /* InfoPlist.strings in Resources */,
 				91EF5C4D15D44A62000174A0 /* MainStoryboard.storyboard in Resources */,
+				9179D07017942E36008E360D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -440,6 +445,7 @@
 				91EF5C6D15D44A62000174A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91EF5C6E15D44A62000174A0 /* Build configuration list for PBXNativeTarget "StoryboardDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +454,7 @@
 				91EF5C7015D44A62000174A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

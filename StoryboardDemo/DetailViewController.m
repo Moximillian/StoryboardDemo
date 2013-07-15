@@ -15,6 +15,7 @@
 @implementation DetailViewController
 
 #pragma mark - Managing the detail item
+@synthesize detailMap;
 
 - (void)setDetailItem:(id)newDetailItem
 {
