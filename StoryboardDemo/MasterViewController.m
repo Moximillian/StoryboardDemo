@@ -48,7 +48,12 @@
     if (!_objects) {
         _objects = [[NSMutableArray alloc] init];
     }
-    [_objects insertObject:[NSDate date] atIndex:0];
+    
+    NSNumber *lat = [NSNumber numberWithDouble:(60 + arc4random()/(pow(2, 32)-1)*4)];
+    NSNumber *lon = [NSNumber numberWithDouble:(24 + arc4random()/(pow(2, 32)-1)*4)];
+
+    NSDictionary *contents = [NSDictionary dictionaryWithObjects:@[[NSDate date],@[lat,lon]] forKeys:@[@"text",@"location"]];
+    [_objects insertObject:contents atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -69,8 +74,9 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    NSDictionary *object = _objects[indexPath.row];
+    NSDate *date = [object objectForKey:@"text"];
+    cell.textLabel.text = [date description];
     return cell;
 }
 
@@ -87,6 +93,17 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if([UIDevice currentDevice].userInterfaceIdiom==UIUserInterfaceIdiomPad) {
+        // iPad
+        //NSLog(@"Hello I'm iPad");
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"updateMap" object:self userInfo:_objects[indexPath.row]];
+    } else {
+        // iPhone
     }
 }
 
@@ -110,8 +127,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] updateDetails:_objects[indexPath.row]];
     }
 }
 
